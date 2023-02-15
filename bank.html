@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bap er BANK</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+      <header>
+            <h1 class="text-center text-6xl">welcome to my <span class="font-bold text-orange-500	">baper bank</span>
+            </h1>
+      </header>
+      <main>
+            <section class="bg-blue-200 w-9/12 mx-auto mt-12 p-8">
+                  <h3 class="text-3xl mb-4 font-medium">please login</h3>
+                  <input class="w-9/12 block mb-3 px-3" type="email" name="" id="user-email"
+                        placeholder="enter your email">
+                  <input class="w-9/12 block mb-3 px-3" type="password" name="" id="user-password"
+                        placeholder="enter your password">
+                  <button id="submit-btn"
+                        class="bg-amber-600 hover:bg-amber-300 font-medium text-white px-8 py-2 rounded-lg">Submit</button>
+            </section>
+      </main>
+
+      <script>
+            document.getElementById("submit-btn").addEventListener("click", function (event) {
+                  const userEmail = document.getElementById("user-email")
+                  const newUserEmail = userEmail.value
+
+
+                  const userPassword = document.getElementById("user-password")
+                  const newUserPassword = userPassword.value
+
+                  if (newUserEmail == "bap@bank.com" && newUserPassword == 123456) {
+                        window.location.href = "bank-inside.html"
+                  }
+                  else {
+                        alert("batparer gusti kilai")
+                  }
+            })
+
+      </script>
+</body>
+
+</html>
